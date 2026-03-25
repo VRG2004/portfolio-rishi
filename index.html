@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T. Venkata Rishi Gupta | Digital Marketing Specialist &amp; Portfolio – Chennai, India</title>
+  <meta name="description"
+    content="T. Venkata Rishi Gupta – Digital Marketing Specialist & Web Developer. SEO, Social Media, UI/UX & more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Animated Background -->
+  <div class="bg-canvas">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+    <div class="orb orb-5"></div>
+    <div class="noise-overlay"></div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-glass">
+      <div class="nav-logo">
+        <span class="logo-text">VRG<span class="logo-dot">.</span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" onclick="setActive(this)"><i
+              class="fa-solid fa-house"></i><span>Home</span></a></li>
+        <li><a href="#about" class="nav-link" onclick="setActive(this)"><i
+              class="fa-solid fa-user"></i><span>About</span></a></li>
+        <li><a href="#skills" class="nav-link" onclick="setActive(this)"><i
+              class="fa-solid fa-chart-bar"></i><span>Skills</span></a></li>
+        <li><a href="#experience" class="nav-link" onclick="setActive(this)"><i
+              class="fa-solid fa-briefcase"></i><span>Experience</span></a></li>
+        <li><a href="#projects" class="nav-link" onclick="setActive(this)"><i
+              class="fa-solid fa-rocket"></i><span>Projects</span></a></li>
+        <li><a href="#education" class="nav-link" onclick="setActive(this)"><i
+              class="fa-solid fa-graduation-cap"></i><span>Education</span></a></li>
+        <li><a href="#contact" class="nav-link" onclick="setActive(this)"><i
+              class="fa-solid fa-envelope"></i><span>Contact</span></a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-badge glass-badge">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>Available for Opportunities</span>
+      </div>
+      <h1 class="hero-title">
+        T. Venkata<br />
+        <span class="gradient-text">Rishi Gupta</span>
+      </h1>
+      <p class="hero-subtitle">Digital Marketing Specialist &amp; Web Developer</p>
+      <p class="hero-desc">
+        B.Tech IT student crafting powerful digital experiences — from SEO strategies that rank to interfaces that
+        convert.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-glass-primary">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Get In Touch</span>
+        </a>
+        <a href="#projects" class="btn-glass-secondary">
+          <i class="fa-solid fa-eye"></i>
+          <span>View Work</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-pill">
+          <i class="fa-solid fa-star"></i>
+          <div>
+            <span class="stat-num">8.05</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+        </div>
+        <div class="stat-pill">
+          <i class="fa-solid fa-users"></i>
+          <div>
+            <span class="stat-num">50+</span>
+            <span class="stat-label">Workshop Led</span>
+          </div>
+        </div>
+        <div class="stat-pill">
+          <i class="fa-solid fa-certificate"></i>
+          <div>
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-glass">
+          <div class="avatar-inner">
+            <i class="fa-solid fa-bullhorn avatar-icon"></i>
+          </div>
+          <div class="avatar-pulse"></div>
+        </div>
+        <div class="orbit orbit-1">
+          <div class="orbit-dot"><i class="fa-brands fa-google"></i></div>
+        </div>
+        <div class="orbit orbit-2">
+          <div class="orbit-dot"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="orbit orbit-3">
+          <div class="orbit-dot"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+      </div>
+
+      <!-- Floating Cards -->
+      <div class="float-card card-seo">
+        <i class="fa-solid fa-arrow-trend-up"></i>
+        <div>
+          <span class="fc-label">SEO Rank</span>
+          <span class="fc-value">#1 Position</span>
+        </div>
+      </div>
+      <div class="float-card card-social">
+        <i class="fa-brands fa-instagram"></i>
+        <div>
+          <span class="fc-label">Engagement</span>
+          <span class="fc-value">↑ 340%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag glass-tag"><i class="fa-solid fa-user-tie"></i> About Me</span>
+        <h2 class="section-title">Driven by <span class="gradient-text">Digital Impact</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="about-icon-wrap"><i class="fa-solid fa-rocket"></i></div>
+          <h3>My Mission</h3>
+          <p>B.Tech Information Technology student (2026) with proven expertise in digital marketing and web
+            development. I build strategies that enhance visibility and drive real results.</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-icon-wrap"><i class="fa-solid fa-lightbulb"></i></div>
+          <h3>My Approach</h3>
+          <p>I blend data-driven SEO with creative design thinking — delivering campaigns that are aesthetically
+            compelling and performance-optimized for maximum ROI.</p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-icon-wrap"><i class="fa-solid fa-globe"></i></div>
+          <h3>My Reach</h3>
+          <p>From Chennai to the digital world — I've led workshops, collaborated on cross-functional teams, and
+            delivered projects that span UI/UX, web development, and marketing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag glass-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Core Skills</span>
+        <h2 class="section-title">What I <span class="gradient-text">Bring to the Table</span></h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Digital Marketing -->
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <h3>Digital Marketing</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-brands fa-google"></i> SEO On-page</span>
+            <span class="skill-tag"><i class="fa-solid fa-link"></i> SEO Off-page</span>
+            <span class="skill-tag"><i class="fa-brands fa-instagram"></i> Social Media</span>
+            <span class="skill-tag"><i class="fa-solid fa-key"></i> Keyword Research</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>SEO Strategy</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Social Media Marketing</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Keyword Research</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design & Development -->
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+            <h3>Design & Development</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-solid fa-palette"></i> UI/UX Design</span>
+            <span class="skill-tag"><i class="fa-solid fa-laptop-code"></i> Web Dev</span>
+            <span class="skill-tag"><i class="fa-solid fa-mobile-screen"></i> Responsive</span>
+            <span class="skill-tag"><i class="fa-solid fa-sitemap"></i> Web Design</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>UI/UX Design</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="82%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Web Development</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="78%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Responsive Design</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Tools -->
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h3>Technical Tools</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-solid fa-c"></i> Canva</span>
+            <span class="skill-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+            <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML/CSS</span>
+            <span class="skill-tag"><i class="fa-solid fa-globe"></i> Web Mgmt</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>Figma / Canva</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="87%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <span>HTML / CSS</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Adobe Photoshop</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-category glass-card">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fa-solid fa-handshake"></i></div>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag"><i class="fa-solid fa-users"></i> Team Work</span>
+            <span class="skill-tag"><i class="fa-solid fa-diagram-project"></i> Project Mgmt</span>
+            <span class="skill-tag"><i class="fa-solid fa-person-chalkboard"></i> Leadership</span>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <span>Team Collaboration</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="92%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Project Management</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="86%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Workshop Leadership</span>
+              <div class="bar-track">
+                <div class="bar-fill" data-width="88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag glass-tag"><i class="fa-solid fa-briefcase"></i> Experience</span>
+        <h2 class="section-title">Professional <span class="gradient-text">Journey</span></h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item glass-card">
+          <div class="timeline-badge"><i class="fa-solid fa-code"></i></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Full Stack Intern</h3>
+                <span class="tl-company"><i class="fa-solid fa-building"></i> IDA Creations</span>
+              </div>
+              <span class="tl-date glass-date"><i class="fa-solid fa-calendar"></i> Jul – Aug 2025</span>
+            </div>
+            <ul class="tl-bullets">
+              <li><i class="fa-solid fa-circle-check"></i> Developed and optimized website functionality with focus on
+                performance metrics and user engagement</li>
+              <li><i class="fa-solid fa-circle-check"></i> Enhanced user interface design and experience, resulting in
+                improved site navigation and accessibility</li>
+              <li><i class="fa-solid fa-circle-check"></i> Collaborated with cross-functional team members to deliver
+                project deliverables on schedule</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="mini-tag">Web Dev</span>
+              <span class="mini-tag">UI/UX</span>
+              <span class="mini-tag">Performance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item glass-card">
+          <div class="timeline-badge club"><i class="fa-solid fa-bullhorn"></i></div>
+          <div class="timeline-content">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Active Member & Team Lead</h3>
+                <span class="tl-company"><i class="fa-solid fa-building"></i> Digital Marketing Club</span>
+              </div>
+              <span class="tl-date glass-date"><i class="fa-solid fa-calendar"></i> Ongoing</span>
+            </div>
+            <ul class="tl-bullets">
+              <li><i class="fa-solid fa-circle-check"></i> Contributed to marketing campaigns and strategy discussions
+              </li>
+              <li><i class="fa-solid fa-circle-check"></i> Organized and led digital marketing workshop for 50+
+                participants</li>
+              <li><i class="fa-solid fa-circle-check"></i> Active participant on multiple campus marketing initiatives
+                and events</li>
+            </ul>
+            <div class="tl-tags">
+              <span class="mini-tag">Leadership</span>
+              <span class="mini-tag">Marketing</span>
+              <span class="mini-tag">Events</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MY WORKS SECTION -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag glass-tag"><i class="fa-solid fa-palette"></i> My Works</span>
+        <h2 class="section-title">Creative <span class="gradient-text">Portfolio</span></h2>
+        <p class="section-desc">College projects, personal designs, movie posters &amp; more — crafted with Canva &amp;
+          Adobe tools.</p>
+      </div>
+
+      <!-- Poster Images Gallery -->
+      <h3 class="works-sub-heading"><i class="fa-solid fa-image"></i> Poster &amp; Thumbnail Designs</h3>
+      <div class="works-poster-grid">
+        <div class="poster-card glass-card">
+          <div class="poster-img-wrap" onclick="openLightbox('poster-simulation.jpg', 'Simulation Guide Thumbnail')">
+            <img src="poster-simulation.jpg" alt="Simulation Guide Thumbnail" loading="lazy" />
+            <div class="img-zoom-hint"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="poster-info">
+            <h4>Simulation Guide Thumbnail</h4>
+            <p>Gaming content thumbnail designed for social media engagement.</p>
+            <div class="project-tags">
+              <span class="skill-tag"><i class="fa-solid fa-gamepad"></i> Gaming</span>
+              <span class="skill-tag"><i class="fa-solid fa-image"></i> Thumbnail</span>
+            </div>
+          </div>
+        </div>
+        <div class="poster-card glass-card">
+          <div class="poster-img-wrap" onclick="openLightbox('poster-the-game.jpg', 'The Game — Short Film Poster')">
+            <img src="poster-the-game.jpg" alt="The Game - Short Film Poster" loading="lazy" />
+            <div class="img-zoom-hint"><i class="fa-solid fa-expand"></i></div>
+          </div>
+          <div class="poster-info">
+            <h4>"The Game" — Short Film Poster</h4>
+            <p>Movie poster designed for college short film. Editing: Venkata Rishi.</p>
+            <div class="project-tags">
+              <span class="skill-tag"><i class="fa-solid fa-film"></i> Movie Poster</span>
+              <span class="skill-tag"><i class="fa-solid fa-school"></i> College</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Canva Design Embeds -->
+      <h3 class="works-sub-heading mt-48"><i class="fa-solid fa-pen-ruler"></i> Canva Design Projects</h3>
+      <div class="works-canva-grid">
+        <div class="canva-card glass-card">
+          <div class="canva-embed-wrap">
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGmX1Phuqk/5xt0BirKqe2yKIEESKuTVw/view?embed"
+              allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+          </div>
+          <div class="canva-card-info">
+            <h4>Design Project 1</h4>
+            <span class="skill-tag"><i class="fa-solid fa-palette"></i> Canva</span>
+          </div>
+        </div>
+        <div class="canva-card glass-card">
+          <div class="canva-embed-wrap">
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGmX_1RBnY/Ohxn4zfFHkY410VSQay9CQ/view?embed"
+              allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+          </div>
+          <div class="canva-card-info">
+            <h4>Design Project 2</h4>
+            <span class="skill-tag"><i class="fa-solid fa-palette"></i> Canva</span>
+          </div>
+        </div>
+        <div class="canva-card glass-card">
+          <div class="canva-embed-wrap">
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGmXppd1LI/-0dYeu36-ak2hpcxMoCjTA/view?embed"
+              allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+          </div>
+          <div class="canva-card-info">
+            <h4>Design Project 3</h4>
+            <span class="skill-tag"><i class="fa-solid fa-palette"></i> Canva</span>
+          </div>
+        </div>
+        <div class="canva-card glass-card">
+          <div class="canva-embed-wrap">
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGljau8V98/XFoKpj3DDhOV1EO4dMuVNQ/view?embed"
+              allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+          </div>
+          <div class="canva-card-info">
+            <h4>Design Project 4</h4>
+            <span class="skill-tag"><i class="fa-solid fa-palette"></i> Canva</span>
+          </div>
+        </div>
+        <div class="canva-card glass-card">
+          <div class="canva-embed-wrap">
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGnURakRXc/LvXEK84RqoYodj6kaVEstA/view?embed"
+              allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+          </div>
+          <div class="canva-card-info">
+            <h4>Design Project 5</h4>
+            <span class="skill-tag"><i class="fa-solid fa-palette"></i> Canva</span>
+          </div>
+        </div>
+        <div class="canva-card glass-card">
+          <div class="canva-embed-wrap">
+            <iframe loading="lazy" src="https://www.canva.com/design/DAG2lvkWkO4/tm6XR6jts2namlH_p8Xtew/view?embed"
+              allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+          </div>
+          <div class="canva-card-info">
+            <h4>Design Project 6</h4>
+            <span class="skill-tag"><i class="fa-solid fa-palette"></i> Canva</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & CERTIFICATIONS -->
+  <section id="education" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag glass-tag"><i class="fa-solid fa-graduation-cap"></i> Education</span>
+        <h2 class="section-title">Academic <span class="gradient-text">Foundation</span></h2>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-col">
+          <h3 class="sub-heading"><i class="fa-solid fa-graduation-cap"></i> Degrees</h3>
+
+          <div class="edu-card glass-card">
+            <div class="edu-icon"><i class="fa-solid fa-university"></i></div>
+            <div class="edu-details">
+              <h4>Bachelor of Technology (B.Tech)</h4>
+              <span class="edu-field">Information Technology</span>
+              <span class="edu-inst"><i class="fa-solid fa-building-columns"></i> Prathyusha Engineering College</span>
+              <div class="edu-meta">
+                <span class="edu-badge"><i class="fa-solid fa-calendar"></i> Expected 2026</span>
+                <span class="edu-badge gold"><i class="fa-solid fa-star"></i> CGPA: 8.05</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-card glass-card">
+            <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+            <div class="edu-details">
+              <h4>12th Grade (Higher Secondary)</h4>
+              <span class="edu-field">Science Stream</span>
+              <span class="edu-inst"><i class="fa-solid fa-building-columns"></i> PSBB Matric Hr Sec School</span>
+              <div class="edu-meta">
+                <span class="edu-badge"><i class="fa-solid fa-calendar"></i> Completed 2022</span>
+                <span class="edu-badge gold"><i class="fa-solid fa-percent"></i> Score: 66.5%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-col">
+          <h3 class="sub-heading"><i class="fa-solid fa-certificate"></i> Certifications</h3>
+
+          <div class="cert-card glass-card">
+            <div class="cert-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="cert-details">
+              <h4>Full Stack Development</h4>
+              <span class="cert-org"><i class="fa-solid fa-building"></i> Novitech</span>
+              <span class="cert-year">2025</span>
+            </div>
+            <div class="cert-badge-wrap">
+              <span class="cert-verified"><i class="fa-solid fa-circle-check"></i></span>
+            </div>
+          </div>
+
+          <div class="cert-card glass-card">
+            <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+            <div class="cert-details">
+              <h4>Python Programming Fundamentals</h4>
+              <span class="cert-org"><i class="fa-solid fa-building"></i> Kaggle</span>
+              <span class="cert-year">2024</span>
+            </div>
+            <div class="cert-badge-wrap">
+              <span class="cert-verified"><i class="fa-solid fa-circle-check"></i></span>
+            </div>
+          </div>
+
+          <h3 class="sub-heading mt-24"><i class="fa-solid fa-trophy"></i> Achievements</h3>
+          <div class="achievement-list glass-card">
+            <div class="ach-item">
+              <i class="fa-solid fa-medal"></i>
+              <span>Led digital marketing workshop for <strong>50+ participants</strong></span>
+            </div>
+            <div class="ach-item">
+              <i class="fa-solid fa-users"></i>
+              <span>Active member of <strong>Digital Marketing Club</strong></span>
+            </div>
+            <div class="ach-item">
+              <i class="fa-solid fa-calendar-check"></i>
+              <span>Multiple campus <strong>marketing events</strong> participation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag glass-tag"><i class="fa-solid fa-envelope"></i> Contact</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p class="section-desc">Have a project in mind or want to collaborate? Drop me a message!</p>
+      </div>
+
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <a href="tel:+917358683724" class="contact-pill glass-card">
+            <div class="contact-pill-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span class="cp-label">Phone</span>
+              <span class="cp-val">+91-7358683724</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right cp-arrow"></i>
+          </a>
+          <a href="mailto:vrgcreations242004@gmail.com" class="contact-pill glass-card">
+            <div class="contact-pill-icon email"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span class="cp-label">Email</span>
+              <span class="cp-val">vrgcreations242004@gmail.com</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right cp-arrow"></i>
+          </a>
+          <a href="https://linkedin.com/in/t-venkata-rishi-gupta-782a92257" target="_blank"
+            class="contact-pill glass-card">
+            <div class="contact-pill-icon linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div>
+              <span class="cp-label">LinkedIn</span>
+              <span class="cp-val">t-venkata-rishi-gupta</span>
+            </div>
+            <i class="fa-solid fa-arrow-up-right cp-arrow"></i>
+          </a>
+          <div class="contact-pill glass-card location-pill">
+            <div class="contact-pill-icon loc"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span class="cp-label">Location</span>
+              <span class="cp-val">Chennai, Tamil Nadu, India</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card" id="contactForm" onsubmit="handleSubmit(event)">
+          <h3 class="form-title"><i class="fa-solid fa-paper-plane"></i> Send a Message</h3>
+          <div class="form-group">
+            <label for="fname"><i class="fa-solid fa-user"></i> Your Name</label>
+            <input type="text" id="fname" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="femail"><i class="fa-solid fa-envelope"></i> Email Address</label>
+            <input type="email" id="femail" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="fsubject"><i class="fa-solid fa-tag"></i> Subject</label>
+            <input type="text" id="fsubject" placeholder="Let's collaborate!" required />
+          </div>
+          <div class="form-group">
+            <label for="fmsg"><i class="fa-solid fa-comment-dots"></i> Message</label>
+            <textarea id="fmsg" rows="4" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-glass-primary full-width" id="submitBtn">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Send Message</span>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-glass">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-text">VRG<span class="logo-dot">.</span></span>
+          <p>Digital Marketing Specialist &amp; Web Developer</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://linkedin.com/in/t-venkata-rishi-gupta-782a92257" target="_blank" class="social-btn"><i
+              class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:vrgcreations242004@gmail.com" class="social-btn"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:+917358683724" class="social-btn"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 T. Venkata Rishi Gupta · Built with <i class="fa-solid fa-heart heart-icon"></i> in Chennai</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()"><i class="fa-solid fa-xmark"></i></button>
+    <img id="lightboxImg" src="" alt="" onclick="event.stopPropagation()" />
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
