@@ -102,13 +102,30 @@ window.addEventListener('mousemove', (e) => {
   });
 });
 
-// ---- IMAGE LIGHTBOX ----
+// ---- IMAGE & VIDEO LIGHTBOX ----
 function openLightbox(src, caption) {
   const overlay = document.getElementById('lightboxOverlay');
   const img = document.getElementById('lightboxImg');
+  const vid = document.getElementById('lightboxVideo');
   const cap = document.getElementById('lightboxCaption');
-  img.src = src;
-  img.alt = caption;
+  
+  if (src.endsWith('.mp4') || src.endsWith('.webm')) {
+    img.style.display = 'none';
+    if(vid) {
+      vid.style.display = 'block';
+      vid.src = src;
+      vid.play();
+    }
+  } else {
+    if(vid) {
+      vid.style.display = 'none';
+      vid.pause();
+    }
+    img.style.display = 'block';
+    img.src = src;
+    img.alt = caption;
+  }
+  
   cap.textContent = caption;
   overlay.classList.add('active');
   document.body.style.overflow = 'hidden';
@@ -116,8 +133,15 @@ function openLightbox(src, caption) {
 
 function closeLightbox() {
   const overlay = document.getElementById('lightboxOverlay');
+  const vid = document.getElementById('lightboxVideo');
   overlay.classList.remove('active');
   document.body.style.overflow = '';
+  
+  if(vid) vid.pause();
+  setTimeout(() => {
+    if(vid) vid.src = '';
+    document.getElementById('lightboxImg').src = '';
+  }, 350); 
 }
 
 // Close on Escape key
